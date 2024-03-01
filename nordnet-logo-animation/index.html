@@ -13,12 +13,11 @@
     }
 
     .n {
-      stroke: black;
-      stroke-width: 3px;
+      fill: black;
 
       &.l,
       &.r {
-        animation-name: spin;
+        animation-name: fold;
         animation-duration: 2s;
         animation-iteration-count: infinite;
         animation-timing-function: ease-in-out;
@@ -27,9 +26,9 @@
       &.l {
         transform-origin: 50px 10px;
       }
-
+      
       &.r {
-        transform-origin: 50px 50px;
+        transform-origin: 70px 50px;
       }
     }
 
@@ -47,17 +46,21 @@
       position: relative;
     }
 
-    @keyframes spin {
+    @keyframes fold {
       from {
         transform: rotate(0);
       }
 
       50% {
-        transform: rotate(360deg);
+        transform: skewX(45deg);
+      }
+      
+      85% {
+        transform: skewX(45deg);
       }
 
       100% {
-        transform: rotate(360deg);
+        transform: skewX(0);
       }
     }
 
@@ -71,11 +74,11 @@
       }
 
       75% {
-        transform: rotate(180deg);
+        transform: rotate(-180deg);
       }
 
       100% {
-        transform: rotate(360deg);
+        transform: rotate(-360deg);
       }
     }
 
@@ -89,7 +92,7 @@
       }
 
       75% {
-        transform: translateY(-200px);
+        transform: translateY(-90px);
       }
 
       100% {
@@ -102,10 +105,10 @@
 <body>
   <div class="container">
     <div class="jump">
-      <svg viewBox="0 0 100 60" width="300px" class="spin-logo" style="border: 2px solid red;">
-        <path class="n l" d="M10 50 L 50 10" />
-        <path class="n m" d="M50 10 L 50 50" />
-        <path class="n r" d="M50 50 L 90 10" />
+      <svg viewBox="0 0 110 60" width="300px" class="spin-logo">
+        <path class="n l" d="M0 50 10 50 50 10 40 10 0 50" />
+        <path class="n m" d="M50 10 50 50 60 50 60 10 50 10" />
+        <path class="n r" d="M60 50 100 10 110 10 70 50" />
       </svg>
     </div>
   </div>
