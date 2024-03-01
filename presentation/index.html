@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset-styles.css" />
+  <style>
+    h1 {
+      font-size: 2rem;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    ul,
+    ol {
+      list-style-type: disc;
+      list-style-position: inside;
+    }
+
+    body {
+      padding: 1rem;
+    }
+
+    /* Presentation styles */
+    section > *,
+    section > * > *,
+    section > * > * > *,
+    section > * > * > * > *,
+    section > * > * > * > * > *,
+    section > * > * > * > * > * > *,
+    section > * > * > * > * > * > * > * {
+      opacity: 0;
+    }
+
+    .show, .animate-none {
+      opacity: 1;
+    }
+
+    :has(.show, .animate-none) {
+      opacity: 1;
+    }
+
+    div, section, ul, ol {
+      opacity: 1;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <section>
+      <h1 class="show">
+        Main title
+      </h1>
+    </section>
+    <section>
+      <h2>Next sub-heading</h2>
+      <p>A paragraph leading up to...</p>
+      <ul>
+        Stupid text in ul
+        <li class="show">List item 1</li>
+        <li>List item 2, not yet shown</li>
+        <li class="animate-none">List item 3 (non-animated)</li>
+      </ul>
+      <p class="animate-none">Non-animated paragraph here</p>
+      <div>
+        Div with a...
+        <p class="animate-none">Non-animated paragraph</p>
+      </div>
+      <div>
+        <div>
+          <p>Deeply nested paragraph</p>
+          <p class="show">Deeply nested paragraph, shown</p>
+          <p class="animate-none">Deeply nested paragraph, always shown (non-animated)</p>
+          <p>And another with a <span class="animate-none" style="color: red;">red text in span</span></p>
+        </div>
+      </div>
+    </section>
+    <p>
+
+    </p>
+  </div>
+</body>
+
+</html>

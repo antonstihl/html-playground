@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="reset-styles.css">
+  <style>
+    :root {
+      --bgColor: rgb(104, 30, 30);
+    }
+
+    body {
+      background-color: var(--bgColor);
+      color: black;
+      font-size: 30px;
+    }
+
+    .container {
+      padding: 1rem;
+      display: grid;
+      /* grid-auto-flow: column; */
+      gap: 1rem;
+    }
+
+    .label {
+      display: grid;
+      place-items: center;
+      position: relative;
+      width: 200px;
+      aspect-ratio: 2;
+      background-color: antiquewhite;
+      border-radius: 20px;
+      transform-origin: 25px 25px;
+      transition: transform 0.5s;
+      border: 5px ridge black;
+      user-select: none;
+    }
+
+    .label::before {
+      content: "";
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      box-sizing: border-box;
+      border: 2px solid black;
+      background-color: var(--bgColor);
+      width: 20px;
+      aspect-ratio: 1;
+      border-radius: 100%;
+    }
+
+    .label:hover {
+      /* transform: rotate(10deg); */
+      animation: spin1 4s ease-in-out;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+    }
+
+    .hero {
+      background-color: antiquewhite;
+      padding: 1rem;
+      line-height: 2;
+    }
+
+    .header {
+      position: sticky;
+      top: 0;
+      display: grid;
+      grid-template-columns: 2rem 1fr;
+      justify-content: start;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: var(--bgColor);
+      color: antiquewhite;
+      font-weight: 800;
+      border-bottom: 4px ridge black;
+      z-index: 10;
+    }
+
+    .hamburger-button {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 3px;
+      background-color: var(--bgColor);
+      border: none;
+      height: 30px;
+      aspect-ratio: 1;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      cursor:pointer;
+    }
+
+    .hamburger {
+      position: relative;
+      height: 4px;
+      border-radius: 10px;
+      width: 100%;
+      background-color: white;
+      transition-property: all;
+      transition-duration: 0.5s;
+    }
+
+    .hamburger-button.open {
+      .lid {
+        transform: translateY(13px) rotate(-45deg);
+      }
+
+      .bottom {
+        transform: translateY(-13px) rotate(45deg);
+      }
+
+      .meat {
+        transform: rotate(45deg);
+      }
+    }
+
+    .menu {
+      position: absolute;
+      transform: rotate(-90deg);
+      transform-origin: top left;
+      padding: 2rem 1rem 1rem 1rem;
+      margin-left: 1rem;
+      border-radius: 0px 0px 10px 10px;
+      border: 2px ridge black;
+      color: antiquewhite;
+      transition-property: transform;
+      transition-duration: 0.5s;
+      position: fixed;
+      top: 4rem;
+      background-color: var(--bgColor);
+      z-index: 5;
+    }
+
+    .menu.open {
+      transform: rotate(0);
+    }
+
+    @keyframes spin1 {
+      from {
+        transform: rotate(0);
+      }
+
+      to {
+        transform: rotate(calc(10*360deg));
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <nav>
+      <button class="hamburger-button">
+        <div class="hamburger lid"></div>
+        <div class="hamburger meat"></div>
+        <div class="hamburger bottom"></div>
+      </button>
+    </nav>
+    <div>AppName</div>
+  </div>
+  <div class="menu">
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
+  </div>
+  <script>
+    const hamburgerButton = document.querySelector('.hamburger-button');
+    const menu = document.querySelector('.menu');
+    hamburgerButton.addEventListener('click', e => {
+      hamburgerButton.classList.toggle('open');
+      menu.classList.toggle('open');
+    });
+  </script>
+  <div class="hero">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab voluptas qui quidem ad voluptatem sint a atque, magni
+      deserunt facilis doloribus, corrupti nam expedita, eos quam laudantium aliquid amet odit enim dolore vero natus.
+      Quas aliquid quis sint, magnam ea officia libero laudantium dolorum necessitatibus! Error quas, minima molestias
+      quaerat iste facilis reprehenderit eveniet similique!</p>
+  </div>
+  <div class="container">
+    <div class="label">
+      Label 1
+    </div>
+    <div class="label">
+      Label 2
+    </div>
+    <div class="label">
+      Label 3
+    </div>
+    <div class="label">
+      Label 4
+    </div>
+    <div class="label">
+      Label 5
+    </div>
+    <div class="label">
+      Label 6
+    </div>
+    <div class="label">
+      Label 7
+    </div>
+    <div class="label">
+      Label 8
+    </div>
+  </div>
+</body>
+
+</html>

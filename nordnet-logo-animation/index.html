@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      display: grid;
+      place-items: center;
+      min-height: 100vh;
+    }
+
+    .n {
+      stroke: black;
+      stroke-width: 3px;
+
+      &.l,
+      &.r {
+        animation-name: spin;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+
+      &.l {
+        transform-origin: 50px 10px;
+      }
+
+      &.r {
+        transform-origin: 50px 50px;
+      }
+    }
+
+    .spin-logo {
+      animation: spin-logo 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+
+    .jump {
+      animation: jump 2s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+      transform-origin: 100px 60px;
+      position: relative;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0);
+      }
+
+      50% {
+        transform: rotate(360deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes spin-logo {
+      from {
+        transform: rotate(0);
+      }
+
+      40% {
+        transform: rotate(0);
+      }
+
+      75% {
+        transform: rotate(180deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    @keyframes jump {
+      from {
+        transform: translateY(0);
+      }
+
+      40% {
+        transform: translateY(0);
+      }
+
+      75% {
+        transform: translateY(-200px);
+      }
+
+      100% {
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jump">
+      <svg viewBox="0 0 100 60" width="300px" class="spin-logo" style="border: 2px solid red;">
+        <path class="n l" d="M10 50 L 50 10" />
+        <path class="n m" d="M50 10 L 50 50" />
+        <path class="n r" d="M50 50 L 90 10" />
+      </svg>
+    </div>
+  </div>
+</body>
+
+</html>
