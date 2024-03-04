@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poof</title>
+  <link rel="stylesheet" href="reset-styles.css" />
+  <style>
+    div {
+      display: flex;
+      justify-content: center;
+      margin-top: 5rem;
+    }
+
+    button {
+      margin: 10px;
+    }
+
+    .poofable {
+      transition: all;
+      transition-duration: 10s;
+    }
+
+    .poof {
+      filter: blur(100vw);
+      opacity: 0;
+      scale: 10;
+      transform: translateY(-1000px) skew(10deg, 10deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <button class="poofable">Don't push me</button>
+  </div>
+  <script>document.querySelectorAll('.poofable').forEach(e => {
+      e.addEventListener('click', () => e.classList.add('poof'))
+    })</script>
+</body>
+
+</html>
