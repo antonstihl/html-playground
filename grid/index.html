@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <style>
+    .carousel {
+      display: grid;
+      gap: 1rem;
+      grid-template-areas: "a b" "a c";
+    }
+
+    #a {
+      grid-area: a;
+      background-color: aquamarine;
+    }
+
+    #b {
+      grid-area: b;
+      background-color: brown;
+    }
+
+    #c {
+      grid-area: c;
+      background-color: coral;
+    }
+
+    .card {
+      padding: 0.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="carousel">
+    <div class="card" id="a">
+      <h3>The first thing</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, obcaecati. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, eveniet? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam architecto quas culpa. Quam voluptate officia perspiciatis nemo praesentium quod qui suscipit omnis provident dignissimos iure excepturi laborum ea, animi in dolore non molestiae illo voluptates optio laboriosam rerum. Quidem reprehenderit quos ipsa fugiat numquam iusto labore autem voluptatem iste doloribus.</p>
+    </div>
+    <div class="card" id="b">
+      <h3>2nd thingy</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, obcaecati.</p>
+    </div>
+    <div class="card" id="c">
+      <h3>2nd thingy</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat, obcaecati.</p>
+    </div>
+  </div>
+</body>
+
+</html>
