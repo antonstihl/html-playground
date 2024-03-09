@@ -13,18 +13,28 @@
     :has(section ~ section.current) .arrow-up {
       opacity: 1;
     }
-    
+
     :has(section.current + section) .arrow-down {
       opacity: 1;
     }
 
+    :has(section.current .fr:not(.previous-focus)) .arrow-right {
+      opacity: 1;
+    }
 
+    :has(section.current .previous-focus:not(.current-focus)) .arrow-left {
+      opacity: 1;
+    }
   </style>
 </head>
 
 <body>
   <div id="slide-deck">
-    <section class="current">A</section>
+    <section class="current">
+      <p class="fr previous-focus">p1</p>
+      <p class="fr previous-focus current-focus">p2</p>
+      <p class="fr">p3</p>
+    </section>
     <section class="">B</section>
     <section class="">C</section>
   </div>
