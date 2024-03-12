@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colooooors</title>
+  <style>
+    * {
+      transition-property: all;
+      transition-duration: 500ms;
+    }
+
+    .card {
+      border: 1px solid black;
+      padding: 1rem;
+      width: max-content;
+      color: green;
+    }
+
+    span {
+      color: blueviolet;
+    }
+
+    .golden {
+      color: red;
+
+      * {
+        color: red;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    Text outside content-wrapper
+    <div>
+      <div>
+        <div>
+          <div>
+            <div>
+              <div>
+                <p>Paragraph text with a <span>spaaaaan</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    document.querySelector('.card').addEventListener('click', e => e.target.classList.toggle('golden'));
+  </script>
+</body>
+
+</html>
