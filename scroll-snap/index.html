@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html,
+    body,
+    div {
+      padding: 0;
+      margin: 0;
+    }
+
+    .scroll-container {
+      height: 80vh;
+      overflow: scroll;
+      border: 1px solid firebrick;
+      width: 50%;
+      padding-left: 1rem;
+      scroll-snap-type: y mandatory;
+    }
+
+    p {
+      border: 1px solid black;
+      height: 50vh;
+      scroll-snap-align: start;
+      padding: 1rem;
+      background-color: blanchedalmond;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="scroll-container">
+    <p>P</p>
+    <p>O</p>
+    <p>O</p>
+    <p>P</p>
+    <p>P</p>
+    <p>P</p>
+    <p>P</p>
+    <p>P</p>
+    <p>P</p>
+  </div>
+</body>
+
+</html>
