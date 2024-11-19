@@ -1,0 +1,44 @@
+/* Opt-in the whole page to interpolate sizes to/from keywords */
+:root {
+  interpolate-size: allow-keywords; /* 👈 */
+}
+
+.wrapper {
+  min-height: 100%;
+  place-items: center;
+}
+
+.foo {
+  transition-property: height, background-color;
+  transition-duration: 1s;
+}
+
+.bar {
+  transition-property: height, background-color;
+  transition-duration: 1s;
+}
+
+.flippable-card:not(.flipped) {
+  border-radius: 1rem;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  user-select: none;
+
+  .bar {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+.flippable-card.flipped {
+  /* transform: rotateX(180deg); */
+  background-color: cadetblue;
+
+  .foo {
+    height: 0;
+    overflow: hidden;
+  }
+}
+
+/* interpolate-size */
+
