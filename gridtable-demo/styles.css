@@ -1,0 +1,96 @@
+.wrapper {}
+
+@layer baseline {
+  table {
+    width: 100%;
+  }
+
+  thead {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+
+  th {
+    padding-inline: 0.5rem;
+    border-bottom: 1px solid black;
+  }
+
+  td {
+    padding-inline: 0.5rem;
+    white-space: nowrap;
+  }
+
+  td:nth-child(4) {
+    text-align: right;
+  }
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    left: 0;
+    bottom: 100%;
+
+    &.show {
+      display: block;
+    }
+  }
+}
+
+/* @layer flextable {
+  tr {
+    display: flex;
+  }
+  
+  th {
+    flex: 1 0 50px;
+  }
+  
+  td {
+    flex: 1 0 50px;
+  }
+
+  td:nth-child(3), th:nth-child(3) {
+    flex-basis: 5ch;
+  }
+} */
+
+@layer grid {
+  table {
+    display: grid;
+    grid-template-columns: min-content min-content 10ch auto auto;
+  }
+
+  thead,
+  tbody,
+  tr {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+/* @layer grid-0 {
+  table {
+    display: grid;
+    grid-template-columns: minmax(10ch, 1fr) min-content min-content 1fr 1fr;
+  }
+
+  thead,
+  tbody,
+  tr {
+    display: grid;
+    grid-template-columns: subgrid;
+    grid-column: 1 / -1;
+  }
+
+  td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+} */

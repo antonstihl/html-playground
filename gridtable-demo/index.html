@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TABLE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <h1>Developers</h1>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Ticker</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td>
+            <button onclick="document.getElementById('more-info-anton').classList.toggle('show')"
+              style="position: relative;">
+              More info
+              <div id="more-info-anton" class="tooltip">Here is some more stuff that pops up because I clicked</div>
+            </button>
+            <button popovertarget="delete-popover">Delete</button>
+            <dialog popover id="delete-popover">Do you really want to delete?</dialog>
+          </td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+          <td>Anton Stihl von der Malmö</td>
+          <td>23</td>
+          <td>JAJA</td>
+          <td>6.70 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Beatrice</td>
+          <td>29</td>
+          <td>BEBE</td>
+          <td>12.30 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>Cecilia</td>
+          <td>31</td>
+          <td>CECE</td>
+          <td>9.80 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+        <tr>
+          <td>David</td>
+          <td>27</td>
+          <td>DADA</td>
+          <td>15.00 SEK</td>
+          <td><button>More info</button> <button>Delete</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>
