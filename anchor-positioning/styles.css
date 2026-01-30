@@ -1,0 +1,40 @@
+.wrapper {}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+
+  anchor-name: --banana;
+
+  >div {
+    background: bisque;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 1rem;
+
+    &:hover {
+      cursor: pointer;
+      anchor-name: --banana;
+      background: rgba(from rebeccapurple r g b / 0.2);
+    }
+  }
+}
+
+.derp {
+  position-anchor: --banana;
+  position-try-fallbacks: flip-inline;
+  position: absolute;
+  right: anchor(right);
+  top: anchor(bottom);
+  display: grid;
+  place-content: center;
+  transition: left 0.5s ease-in-out, right 0.5s ease-in-out, top 0.5s ease-in-out;
+  pointer-events: none;
+  font-size: 2rem;
+}
+
+.wrapper:not(:has(.grid > :hover)) .derp {
+  transition-duration: 2s;
+}
