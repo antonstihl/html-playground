@@ -22,19 +22,35 @@
   }
 }
 
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12px, 1fr));
+
+  >div {
+    background: bisque;
+    height: 12px;
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+      anchor-name: --banana;
+      background: hotpink;
+    }
+  }
+}
+
 .derp {
   position-anchor: --banana;
   position-try-fallbacks: flip-inline;
   position: absolute;
+  left: anchor(left);
   right: anchor(right);
   top: anchor(bottom);
   display: grid;
   place-content: center;
-  transition: left 0.5s ease-in-out, right 0.5s ease-in-out, top 0.5s ease-in-out;
+  transition-property: left, right, top;
+  transition-duration: 1s;
+  transition-timing-function: linear(0, 0.453 7.8%, 0.803 16.1%, 1.048 24.9%, 1.132 29.5%, 1.194 34.4%, 1.227 38.4%, 1.245 42.5%, 1.25 46.9%, 1.242 51.7%, 1.2 60.5%, 1.038 84.9%, 1.009 92.5%, 1);
   pointer-events: none;
   font-size: 2rem;
-}
-
-.wrapper:not(:has(.grid > :hover)) .derp {
-  transition-duration: 2s;
 }
